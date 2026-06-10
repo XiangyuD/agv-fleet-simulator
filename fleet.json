@@ -1,0 +1,17 @@
+[
+  {
+    "name": "AGV-01",
+    "battery": 80,
+    "state": "IDLE"
+  },
+  {
+    "name": "AGV-02",
+    "battery": 25,
+    "state": "CHARGING"
+  },
+  {
+    "name": "AGV-03",
+    "battery": 60,
+    "state": "IDLE"
+  }
+]

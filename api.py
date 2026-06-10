@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import json
+
+
+
 
 app = FastAPI()
 
@@ -41,12 +45,17 @@ class AGV:
     
 
 
-fleet = [
-    AGV("AGV-01", 80, "IDLE"),
-    AGV("AGV-02", 25, "CHARGING"),
-    AGV("AGV-03", 60, "IDLE")
-]
+def load_fleet():
+    with open("fleet.json", "r") as file:
+        data = json.load(file)
 
+    return [
+        AGV(robot["name"], robot["battery"], robot["state"])
+        for robot in data
+    ]
+
+
+fleet = load_fleet()
 
 @app.get("/")
 def home():
