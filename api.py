@@ -55,7 +55,7 @@ def load_fleet():
     ]
 
 
-fleet = load_fleet()
+load_fleet_from_db()
 
 @app.get("/")
 def home():
