@@ -23,6 +23,16 @@ VALUES
     ('AGV-03', 60, 'IDLE')
 """)
 
+c.execute("""
+CREATE TABLE IF NOT EXISTS tasks (
+    id TEXT PRIMARY KEY,
+    pickup TEXT NOT NULL,
+    dropoff TEXT NOT NULL,
+    assigned_robot TEXT,
+    status TEXT NOT NULL
+)
+""")
+
 conn.commit()
 
 c.execute("SELECT * FROM robots")
