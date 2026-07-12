@@ -7,7 +7,7 @@ This project simulates how a fleet management system assigns transportation task
 
 ## Dashboard
 
-![Dashboard](images/dashboard1.png)
+![Dashboard](image/dashboard1.png)
 
 
 ---
