@@ -4,11 +4,9 @@ A lightweight AGV (Automated Guided Vehicle) fleet management system built with 
 
 This project simulates how a fleet management system assigns transportation tasks to available AGVs, tracks robot status, manages battery levels, and stores task history in a database.
 
-
 ## Dashboard
 
-![Dashboard](image/dashboard1.png)
-
+![Dashboard](image/dashboard.png)
 
 ---
 
